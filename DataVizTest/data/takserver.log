@@ -1,0 +1,3702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2011-07-02T01:54:18</date>
+  <millis>1309564458187</millis>
+  <sequence>6</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>&lt;init&gt;</method>
+  <thread>10</thread>
+  <message>Server started listening on port: 30223.</message>
+</record>
+<record>
+  <date>2011-07-02T01:54:18</date>
+  <millis>1309564458188</millis>
+  <sequence>7</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-02T01:54:24</date>
+  <millis>1309564464373</millis>
+  <sequence>8</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-02T01:54:24</date>
+  <millis>1309564464374</millis>
+  <sequence>9</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>11</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:29</date>
+  <millis>1309564469602</millis>
+  <sequence>10</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>11</thread>
+  <message>LOGON_REQUEST clock name=[esplanade],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:29</date>
+  <millis>1309564469603</millis>
+  <sequence>11</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>11</thread>
+  <message>LOGON_XMPPCON clock name=[esplanade],id=[null]</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:30</date>
+  <millis>1309564470239</millis>
+  <sequence>12</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>11</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[esplanade@tik.okno.be/esplanadenull].</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:30</date>
+  <millis>1309564470297</millis>
+  <sequence>13</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>11</thread>
+  <message>LOGON_SUCCESS clock name=[esplanade],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:32</date>
+  <millis>1309564472801</millis>
+  <sequence>14</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107182-235432-800]</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:32</date>
+  <millis>1309564472801</millis>
+  <sequence>15</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107182-235432-801]</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:32</date>
+  <millis>1309564472912</millis>
+  <sequence>16</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>11</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:32</date>
+  <millis>1309564472915</millis>
+  <sequence>17</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107182-235432-915] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:34</date>
+  <millis>1309564474928</millis>
+  <sequence>18</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107182-235434-927]</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:34</date>
+  <millis>1309564474928</millis>
+  <sequence>19</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107182-235434-928]</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:34</date>
+  <millis>1309564474932</millis>
+  <sequence>20</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>11</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-01T23:54:34</date>
+  <millis>1309564474932</millis>
+  <sequence>21</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>11</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107182-235434-932] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:24</date>
+  <millis>1309733244652</millis>
+  <sequence>22</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:24</date>
+  <millis>1309733244652</millis>
+  <sequence>23</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:28</date>
+  <millis>1309733248348</millis>
+  <sequence>24</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>12</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:28</date>
+  <millis>1309733248349</millis>
+  <sequence>25</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>12</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:28</date>
+  <millis>1309733248519</millis>
+  <sequence>26</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>WARNING</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>logXMPPException</method>
+  <thread>12</thread>
+  <message>Logon failed for clock [illuminatedShrum], Trying to create a new user on the server on XMPP server: unknown: .</message>
+  <exception>
+    <message>SASL authentication DIGEST-MD5 failed: not-authorized: </message>
+    <frame>
+      <class>org.jivesoftware.smack.SASLAuthentication</class>
+      <method>authenticate</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>org.jivesoftware.smack.XMPPConnection</class>
+      <method>login</method>
+      <line>230</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>tryLogin</method>
+      <line>150</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>onClock</method>
+      <line>280</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>onClock</method>
+      <line>60</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>96</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-03T22:47:28</date>
+  <millis>1309733248811</millis>
+  <sequence>27</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>12</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:28</date>
+  <millis>1309733248836</millis>
+  <sequence>28</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>12</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:34</date>
+  <millis>1309733254136</millis>
+  <sequence>29</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-224734-136]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:34</date>
+  <millis>1309733254137</millis>
+  <sequence>30</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-224734-137]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:34</date>
+  <millis>1309733254141</millis>
+  <sequence>31</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>12</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:34</date>
+  <millis>1309733254142</millis>
+  <sequence>32</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-224734-141] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:36</date>
+  <millis>1309733256885</millis>
+  <sequence>33</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-224736-885]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:36</date>
+  <millis>1309733256885</millis>
+  <sequence>34</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-224736-885]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:36</date>
+  <millis>1309733256889</millis>
+  <sequence>35</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>12</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:36</date>
+  <millis>1309733256890</millis>
+  <sequence>36</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-224736-890] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:39</date>
+  <millis>1309733259183</millis>
+  <sequence>37</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-224739-183]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:39</date>
+  <millis>1309733259184</millis>
+  <sequence>38</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-224739-184]</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:39</date>
+  <millis>1309733259188</millis>
+  <sequence>39</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>12</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T22:47:39</date>
+  <millis>1309733259188</millis>
+  <sequence>40</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>12</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-224739-188] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:13:36</date>
+  <millis>1309734816259</millis>
+  <sequence>41</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:13:36</date>
+  <millis>1309734816259</millis>
+  <sequence>42</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:13:43</date>
+  <millis>1309734823050</millis>
+  <sequence>43</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>SEVERE</level>
+  <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>Runtime error while processing client input.</message>
+  <exception>
+    <message>com.google.gson.JsonIOException: java.io.EOFException: End of input</message>
+    <frame>
+      <class>com.google.gson.JsonStreamParser</class>
+      <method>hasNext</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>92</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-03T23:15:45</date>
+  <millis>1309734945910</millis>
+  <sequence>44</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:45</date>
+  <millis>1309734945911</millis>
+  <sequence>45</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:49</date>
+  <millis>1309734949163</millis>
+  <sequence>46</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>14</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:49</date>
+  <millis>1309734949163</millis>
+  <sequence>47</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>14</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:49</date>
+  <millis>1309734949289</millis>
+  <sequence>48</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>14</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:49</date>
+  <millis>1309734949306</millis>
+  <sequence>49</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>14</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:55</date>
+  <millis>1309734955381</millis>
+  <sequence>50</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231555-381]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:55</date>
+  <millis>1309734955382</millis>
+  <sequence>51</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231555-382]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:55</date>
+  <millis>1309734955385</millis>
+  <sequence>52</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>14</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:55</date>
+  <millis>1309734955386</millis>
+  <sequence>53</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231555-386] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:58</date>
+  <millis>1309734958730</millis>
+  <sequence>54</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231558-730]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:58</date>
+  <millis>1309734958730</millis>
+  <sequence>55</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231558-730]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:58</date>
+  <millis>1309734958734</millis>
+  <sequence>56</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>14</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:58</date>
+  <millis>1309734958734</millis>
+  <sequence>57</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231558-734] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:59</date>
+  <millis>1309734959879</millis>
+  <sequence>58</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231559-879]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:59</date>
+  <millis>1309734959880</millis>
+  <sequence>59</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231559-880]</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:59</date>
+  <millis>1309734959883</millis>
+  <sequence>60</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>14</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:15:59</date>
+  <millis>1309734959884</millis>
+  <sequence>61</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>14</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231559-884] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:18:49</date>
+  <millis>1309735129606</millis>
+  <sequence>62</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:18:49</date>
+  <millis>1309735129606</millis>
+  <sequence>63</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:06</date>
+  <millis>1309735146936</millis>
+  <sequence>64</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:06</date>
+  <millis>1309735146936</millis>
+  <sequence>65</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:07</date>
+  <millis>1309735147083</millis>
+  <sequence>66</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>15</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:07</date>
+  <millis>1309735147100</millis>
+  <sequence>67</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:16</date>
+  <millis>1309735156164</millis>
+  <sequence>68</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231916-164]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:16</date>
+  <millis>1309735156164</millis>
+  <sequence>69</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231916-164]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:16</date>
+  <millis>1309735156167</millis>
+  <sequence>70</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:16</date>
+  <millis>1309735156168</millis>
+  <sequence>71</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231916-168] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:23</date>
+  <millis>1309735163319</millis>
+  <sequence>72</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231923-319]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:23</date>
+  <millis>1309735163320</millis>
+  <sequence>73</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231923-319]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:23</date>
+  <millis>1309735163324</millis>
+  <sequence>74</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:23</date>
+  <millis>1309735163325</millis>
+  <sequence>75</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231923-325] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:30</date>
+  <millis>1309735170129</millis>
+  <sequence>76</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231930-129]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:30</date>
+  <millis>1309735170129</millis>
+  <sequence>77</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231930-129]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:30</date>
+  <millis>1309735170133</millis>
+  <sequence>78</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:30</date>
+  <millis>1309735170133</millis>
+  <sequence>79</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231930-133] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171018</millis>
+  <sequence>80</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231931-018]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171019</millis>
+  <sequence>81</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231931-018]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171023</millis>
+  <sequence>82</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;4&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171024</millis>
+  <sequence>83</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231931-024] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171530</millis>
+  <sequence>84</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231931-530]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171530</millis>
+  <sequence>85</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231931-530]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171535</millis>
+  <sequence>86</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;5&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171535</millis>
+  <sequence>87</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231931-535] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171757</millis>
+  <sequence>88</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231931-757]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171757</millis>
+  <sequence>89</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231931-757]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171762</millis>
+  <sequence>90</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;6&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:31</date>
+  <millis>1309735171762</millis>
+  <sequence>91</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231931-762] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172077</millis>
+  <sequence>92</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231932-077]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172078</millis>
+  <sequence>93</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231932-078]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172082</millis>
+  <sequence>94</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;7&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172082</millis>
+  <sequence>95</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231932-082] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172438</millis>
+  <sequence>96</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231932-438]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172439</millis>
+  <sequence>97</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231932-439]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172456</millis>
+  <sequence>98</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;8&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172456</millis>
+  <sequence>99</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231932-456] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172632</millis>
+  <sequence>100</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231932-632]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172633</millis>
+  <sequence>101</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231932-633]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172636</millis>
+  <sequence>102</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;9&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172636</millis>
+  <sequence>103</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231932-636] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172827</millis>
+  <sequence>104</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231932-827]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172828</millis>
+  <sequence>105</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231932-828]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172831</millis>
+  <sequence>106</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;10&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:32</date>
+  <millis>1309735172831</millis>
+  <sequence>107</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231932-831] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:33</date>
+  <millis>1309735173136</millis>
+  <sequence>108</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-231933-136]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:33</date>
+  <millis>1309735173137</millis>
+  <sequence>109</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-231933-137]</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:33</date>
+  <millis>1309735173140</millis>
+  <sequence>110</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;11&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:19:33</date>
+  <millis>1309735173140</millis>
+  <sequence>111</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-231933-140] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:06</date>
+  <millis>1309735206511</millis>
+  <sequence>112</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:06</date>
+  <millis>1309735206511</millis>
+  <sequence>113</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:08</date>
+  <millis>1309735208278</millis>
+  <sequence>114</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:08</date>
+  <millis>1309735208279</millis>
+  <sequence>115</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:08</date>
+  <millis>1309735208395</millis>
+  <sequence>116</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>15</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:08</date>
+  <millis>1309735208409</millis>
+  <sequence>117</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:47</date>
+  <millis>1309735247520</millis>
+  <sequence>118</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:47</date>
+  <millis>1309735247520</millis>
+  <sequence>119</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:50</date>
+  <millis>1309735250074</millis>
+  <sequence>120</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:50</date>
+  <millis>1309735250075</millis>
+  <sequence>121</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:50</date>
+  <millis>1309735250187</millis>
+  <sequence>122</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>15</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:20:50</date>
+  <millis>1309735250200</millis>
+  <sequence>123</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:17</date>
+  <millis>1309735277522</millis>
+  <sequence>124</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:17</date>
+  <millis>1309735277522</millis>
+  <sequence>125</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:19</date>
+  <millis>1309735279820</millis>
+  <sequence>126</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:19</date>
+  <millis>1309735279820</millis>
+  <sequence>127</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:19</date>
+  <millis>1309735279935</millis>
+  <sequence>128</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>15</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:19</date>
+  <millis>1309735279948</millis>
+  <sequence>129</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>15</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:29</date>
+  <millis>1309735289512</millis>
+  <sequence>130</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-232129-511]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:29</date>
+  <millis>1309735289512</millis>
+  <sequence>131</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-232129-512]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:29</date>
+  <millis>1309735289515</millis>
+  <sequence>132</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:29</date>
+  <millis>1309735289515</millis>
+  <sequence>133</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-232129-515] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:30</date>
+  <millis>1309735290972</millis>
+  <sequence>134</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-232130-972]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:30</date>
+  <millis>1309735290972</millis>
+  <sequence>135</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-232130-972]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:30</date>
+  <millis>1309735290975</millis>
+  <sequence>136</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:30</date>
+  <millis>1309735290976</millis>
+  <sequence>137</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-232130-976] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302179</millis>
+  <sequence>138</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-232142-179]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302179</millis>
+  <sequence>139</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-232142-179]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302182</millis>
+  <sequence>140</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302183</millis>
+  <sequence>141</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-232142-183] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302878</millis>
+  <sequence>142</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-232142-878]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302878</millis>
+  <sequence>143</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-232142-878]</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302882</millis>
+  <sequence>144</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>15</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;4&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:21:42</date>
+  <millis>1309735302882</millis>
+  <sequence>145</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>15</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-232142-882] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:32:13</date>
+  <millis>1309735933128</millis>
+  <sequence>146</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:32:13</date>
+  <millis>1309735933128</millis>
+  <sequence>147</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:32:21</date>
+  <millis>1309735941794</millis>
+  <sequence>148</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>SEVERE</level>
+  <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Runtime error while processing client input.</message>
+  <exception>
+    <message>com.google.gson.JsonIOException: java.io.EOFException: End of input</message>
+    <frame>
+      <class>com.google.gson.JsonStreamParser</class>
+      <method>hasNext</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>92</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-03T23:34:50</date>
+  <millis>1309736090586</millis>
+  <sequence>149</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:50</date>
+  <millis>1309736090586</millis>
+  <sequence>150</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:57</date>
+  <millis>1309736097134</millis>
+  <sequence>151</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>17</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:57</date>
+  <millis>1309736097134</millis>
+  <sequence>152</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>17</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:57</date>
+  <millis>1309736097245</millis>
+  <sequence>153</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>17</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:57</date>
+  <millis>1309736097258</millis>
+  <sequence>154</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>17</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:58</date>
+  <millis>1309736098881</millis>
+  <sequence>155</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-233458-881]</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:58</date>
+  <millis>1309736098881</millis>
+  <sequence>156</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-233458-881]</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:58</date>
+  <millis>1309736098885</millis>
+  <sequence>157</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>17</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:58</date>
+  <millis>1309736098885</millis>
+  <sequence>158</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-233458-885] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:59</date>
+  <millis>1309736099785</millis>
+  <sequence>159</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-233459-785]</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:59</date>
+  <millis>1309736099785</millis>
+  <sequence>160</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-233459-785]</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:59</date>
+  <millis>1309736099788</millis>
+  <sequence>161</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>17</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:34:59</date>
+  <millis>1309736099789</millis>
+  <sequence>162</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>17</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-233459-789] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:17</date>
+  <millis>1309736417084</millis>
+  <sequence>163</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:17</date>
+  <millis>1309736417085</millis>
+  <sequence>164</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:20</date>
+  <millis>1309736420167</millis>
+  <sequence>165</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>18</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:20</date>
+  <millis>1309736420168</millis>
+  <sequence>166</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>18</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:20</date>
+  <millis>1309736420280</millis>
+  <sequence>167</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>18</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:20</date>
+  <millis>1309736420292</millis>
+  <sequence>168</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>18</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:22</date>
+  <millis>1309736422156</millis>
+  <sequence>169</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-234022-156]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:22</date>
+  <millis>1309736422157</millis>
+  <sequence>170</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-234022-157]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:22</date>
+  <millis>1309736422160</millis>
+  <sequence>171</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:22</date>
+  <millis>1309736422160</millis>
+  <sequence>172</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-234022-160] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:23</date>
+  <millis>1309736423537</millis>
+  <sequence>173</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-234023-537]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:23</date>
+  <millis>1309736423537</millis>
+  <sequence>174</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-234023-537]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:23</date>
+  <millis>1309736423540</millis>
+  <sequence>175</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:23</date>
+  <millis>1309736423540</millis>
+  <sequence>176</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-234023-540] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:24</date>
+  <millis>1309736424536</millis>
+  <sequence>177</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-234024-536]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:24</date>
+  <millis>1309736424536</millis>
+  <sequence>178</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-234024-536]</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:24</date>
+  <millis>1309736424539</millis>
+  <sequence>179</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:40:24</date>
+  <millis>1309736424540</millis>
+  <sequence>180</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-234024-539] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541842</millis>
+  <sequence>181</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-235901-842]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541843</millis>
+  <sequence>182</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-235901-843]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541846</millis>
+  <sequence>183</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;4&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541846</millis>
+  <sequence>184</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-235901-846] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541847</millis>
+  <sequence>185</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-235901-847]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541847</millis>
+  <sequence>186</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-235901-847]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541850</millis>
+  <sequence>187</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;5&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:01</date>
+  <millis>1309737541850</millis>
+  <sequence>188</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-235901-850] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:03</date>
+  <millis>1309737543819</millis>
+  <sequence>189</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107184-235903-819]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:03</date>
+  <millis>1309737543819</millis>
+  <sequence>190</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107184-235903-819]</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:03</date>
+  <millis>1309737543822</millis>
+  <sequence>191</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>18</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;6&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-03T23:59:03</date>
+  <millis>1309737543823</millis>
+  <sequence>192</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>18</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107184-235903-822] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T11:22:09</date>
+  <millis>1309778529643</millis>
+  <sequence>193</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-04T11:22:09</date>
+  <millis>1309778529643</millis>
+  <sequence>194</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-04T11:23:56</date>
+  <millis>1309778636708</millis>
+  <sequence>195</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>19</thread>
+  <message>LOGON_REQUEST clock name=[tst],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-04T11:23:56</date>
+  <millis>1309778636708</millis>
+  <sequence>196</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>19</thread>
+  <message>LOGON_XMPPCON clock name=[tst],id=[null]</message>
+</record>
+<record>
+  <date>2011-07-04T11:23:56</date>
+  <millis>1309778636857</millis>
+  <sequence>197</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>WARNING</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>logXMPPException</method>
+  <thread>19</thread>
+  <message>Logon failed for clock [tst], Trying to create a new user on the server on XMPP server: unknown: .</message>
+  <exception>
+    <message>SASL authentication DIGEST-MD5 failed: not-authorized: </message>
+    <frame>
+      <class>org.jivesoftware.smack.SASLAuthentication</class>
+      <method>authenticate</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>org.jivesoftware.smack.XMPPConnection</class>
+      <method>login</method>
+      <line>230</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>tryLogin</method>
+      <line>150</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>onClock</method>
+      <line>280</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>onClock</method>
+      <line>60</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>96</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-04T11:23:57</date>
+  <millis>1309778637122</millis>
+  <sequence>198</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>19</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[tst@tik.okno.be/tstnull].</message>
+</record>
+<record>
+  <date>2011-07-04T11:23:57</date>
+  <millis>1309778637135</millis>
+  <sequence>199</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>19</thread>
+  <message>LOGON_SUCCESS clock name=[tst],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:02</date>
+  <millis>1309778642128</millis>
+  <sequence>200</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107185-112402-128]</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:02</date>
+  <millis>1309778642129</millis>
+  <sequence>201</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107185-112402-129]</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:02</date>
+  <millis>1309778642131</millis>
+  <sequence>202</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>19</thread>
+  <message>&lt;item id='tst'&gt;&lt;clock xmlns='pubsub:clock' clockName='tst'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:02</date>
+  <millis>1309778642132</millis>
+  <sequence>203</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107185-112402-132] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:48</date>
+  <millis>1309778688847</millis>
+  <sequence>204</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107185-112448-847]</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:48</date>
+  <millis>1309778688847</millis>
+  <sequence>205</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107185-112448-847]</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:48</date>
+  <millis>1309778688850</millis>
+  <sequence>206</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>19</thread>
+  <message>&lt;item id='tst'&gt;&lt;clock xmlns='pubsub:clock' clockName='tst'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T11:24:48</date>
+  <millis>1309778688850</millis>
+  <sequence>207</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107185-112448-850] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:10</date>
+  <millis>1309778710390</millis>
+  <sequence>208</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107185-112510-390]</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:10</date>
+  <millis>1309778710391</millis>
+  <sequence>209</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107185-112510-391]</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:10</date>
+  <millis>1309778710393</millis>
+  <sequence>210</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>19</thread>
+  <message>&lt;item id='tst'&gt;&lt;clock xmlns='pubsub:clock' clockName='tst'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:10</date>
+  <millis>1309778710394</millis>
+  <sequence>211</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107185-112510-394] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:15</date>
+  <millis>1309778715318</millis>
+  <sequence>212</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107185-112515-317]</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:15</date>
+  <millis>1309778715318</millis>
+  <sequence>213</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107185-112515-318]</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:15</date>
+  <millis>1309778715320</millis>
+  <sequence>214</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>19</thread>
+  <message>&lt;item id='tst'&gt;&lt;clock xmlns='pubsub:clock' clockName='tst'&gt;&lt;tik&gt;
+  &lt;idTik&gt;4&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T11:25:15</date>
+  <millis>1309778715321</millis>
+  <sequence>215</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>19</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107185-112515-321] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:53</date>
+  <millis>1309813133794</millis>
+  <sequence>216</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:53</date>
+  <millis>1309813133794</millis>
+  <sequence>217</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:56</date>
+  <millis>1309813136275</millis>
+  <sequence>218</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>20</thread>
+  <message>LOGON_REQUEST clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:56</date>
+  <millis>1309813136275</millis>
+  <sequence>219</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>20</thread>
+  <message>LOGON_XMPPCON clock name=[illuminatedShrum],id=[4]</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:56</date>
+  <millis>1309813136417</millis>
+  <sequence>220</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>20</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[illuminatedshrum@tik.okno.be/illuminatedShrum4].</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:56</date>
+  <millis>1309813136426</millis>
+  <sequence>221</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>20</thread>
+  <message>LOGON_SUCCESS clock name=[illuminatedShrum],id=[4] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:58</date>
+  <millis>1309813138653</millis>
+  <sequence>222</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107185-205858-653]</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:58</date>
+  <millis>1309813138653</millis>
+  <sequence>223</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107185-205858-653]</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:58</date>
+  <millis>1309813138656</millis>
+  <sequence>224</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>20</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T20:58:58</date>
+  <millis>1309813138656</millis>
+  <sequence>225</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107185-205858-656] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:01</date>
+  <millis>1309813141002</millis>
+  <sequence>226</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107185-205901-002]</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:01</date>
+  <millis>1309813141002</millis>
+  <sequence>227</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107185-205901-002]</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:01</date>
+  <millis>1309813141005</millis>
+  <sequence>228</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>20</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:01</date>
+  <millis>1309813141005</millis>
+  <sequence>229</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107185-205901-005] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:03</date>
+  <millis>1309813143273</millis>
+  <sequence>230</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_REQUEST tik clockId=[4],arrivalTime=[201107185-205903-273]</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:03</date>
+  <millis>1309813143273</millis>
+  <sequence>231</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_XMPPSEND tik clockId=[4],arrivalTime=[201107185-205903-273]</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:03</date>
+  <millis>1309813143276</millis>
+  <sequence>232</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>20</thread>
+  <message>&lt;item id='illuminatedShrum'&gt;&lt;clock xmlns='pubsub:clock' clockName='illuminatedShrum'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+  &lt;idClock&gt;4&lt;/idClock&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-04T20:59:03</date>
+  <millis>1309813143276</millis>
+  <sequence>233</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>20</thread>
+  <message>TIK_SUCCESS tik clockId=[4],arrivalTime=[201107185-205903-276] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:21:04</date>
+  <millis>1310052064042</millis>
+  <sequence>234</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-07T15:21:04</date>
+  <millis>1310052064043</millis>
+  <sequence>235</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:01</date>
+  <millis>1310052241440</millis>
+  <sequence>236</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>SEVERE</level>
+  <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Runtime error while processing client input.</message>
+  <exception>
+    <message>com.google.gson.JsonIOException: java.io.EOFException: End of input</message>
+    <frame>
+      <class>com.google.gson.JsonStreamParser</class>
+      <method>hasNext</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>92</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-07T15:24:37</date>
+  <millis>1310052277826</millis>
+  <sequence>237</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:37</date>
+  <millis>1310052277826</millis>
+  <sequence>238</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:53</date>
+  <millis>1310052293008</millis>
+  <sequence>239</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>21</thread>
+  <message>LOGON_REQUEST clock name=[esplanade],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:53</date>
+  <millis>1310052293008</millis>
+  <sequence>240</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>21</thread>
+  <message>LOGON_XMPPCON clock name=[esplanade],id=[null]</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:53</date>
+  <millis>1310052293163</millis>
+  <sequence>241</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onClock</method>
+  <thread>21</thread>
+  <message>XMPP connection established for current TAK client
+	jid=[esplanade@tik.okno.be/esplanadenull].</message>
+</record>
+<record>
+  <date>2011-07-07T15:24:53</date>
+  <millis>1310052293176</millis>
+  <sequence>242</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>21</thread>
+  <message>LOGON_SUCCESS clock name=[esplanade],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338823</millis>
+  <sequence>243</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152538-823]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338824</millis>
+  <sequence>244</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152538-824]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338826</millis>
+  <sequence>245</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;1&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338826</millis>
+  <sequence>246</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152538-826] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338827</millis>
+  <sequence>247</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152538-827]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338827</millis>
+  <sequence>248</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152538-827]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338830</millis>
+  <sequence>249</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;2&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:38</date>
+  <millis>1310052338830</millis>
+  <sequence>250</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152538-830] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342791</millis>
+  <sequence>251</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-791]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342792</millis>
+  <sequence>252</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-792]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342794</millis>
+  <sequence>253</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;3&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342795</millis>
+  <sequence>254</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-794] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342795</millis>
+  <sequence>255</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-795]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342796</millis>
+  <sequence>256</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-796]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342799</millis>
+  <sequence>257</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;4&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342799</millis>
+  <sequence>258</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-799] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342800</millis>
+  <sequence>259</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-800]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342801</millis>
+  <sequence>260</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-800]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342804</millis>
+  <sequence>261</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;5&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342804</millis>
+  <sequence>262</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-804] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342805</millis>
+  <sequence>263</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-805]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342805</millis>
+  <sequence>264</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-805]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342808</millis>
+  <sequence>265</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;6&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342808</millis>
+  <sequence>266</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-808] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342809</millis>
+  <sequence>267</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-809]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342809</millis>
+  <sequence>268</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-809]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342811</millis>
+  <sequence>269</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;7&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342812</millis>
+  <sequence>270</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-812] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342812</millis>
+  <sequence>271</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-812]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342813</millis>
+  <sequence>272</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-813]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342816</millis>
+  <sequence>273</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;8&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342816</millis>
+  <sequence>274</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-816] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342817</millis>
+  <sequence>275</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-817]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342817</millis>
+  <sequence>276</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-817]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342820</millis>
+  <sequence>277</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;9&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342821</millis>
+  <sequence>278</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-821] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342821</millis>
+  <sequence>279</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-821]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342822</millis>
+  <sequence>280</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-822]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342825</millis>
+  <sequence>281</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;10&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342825</millis>
+  <sequence>282</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-825] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342826</millis>
+  <sequence>283</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107188-152542-826]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342827</millis>
+  <sequence>284</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_XMPPSEND tik clockId=[null],arrivalTime=[201107188-152542-826]</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342830</millis>
+  <sequence>285</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>onTik</method>
+  <thread>21</thread>
+  <message>&lt;item id='esplanade'&gt;&lt;clock xmlns='pubsub:clock' clockName='esplanade'&gt;&lt;tik&gt;
+  &lt;idTik&gt;11&lt;/idTik&gt;
+&lt;/tik&gt;&lt;/clock&gt;&lt;/item&gt;</message>
+</record>
+<record>
+  <date>2011-07-07T15:25:42</date>
+  <millis>1310052342830</millis>
+  <sequence>286</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logTik</method>
+  <thread>21</thread>
+  <message>TIK_SUCCESS tik clockId=[null],arrivalTime=[201107188-152542-830] WITH NO METADATA VALUES</message>
+</record>
+<record>
+  <date>2011-07-07T15:26:51</date>
+  <millis>1310052411554</millis>
+  <sequence>287</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-07T15:26:51</date>
+  <millis>1310052411554</millis>
+  <sequence>288</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:35</date>
+  <millis>1310052455684</millis>
+  <sequence>289</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>22</thread>
+  <message>LOGON_REQUEST clock name=[null],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:35</date>
+  <millis>1310052455685</millis>
+  <sequence>290</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>22</thread>
+  <message>LOGON_XMPPCON clock name=[null],id=[null]</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:35</date>
+  <millis>1310052455783</millis>
+  <sequence>291</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>WARNING</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>logXMPPException</method>
+  <thread>22</thread>
+  <message>Logon failed for clock [null], Trying to create a new user on the server on XMPP server: unknown: .</message>
+  <exception>
+    <message>SASL authentication failed: </message>
+    <frame>
+      <class>org.jivesoftware.smack.SASLAuthentication</class>
+      <method>authenticate</method>
+      <line>281</line>
+    </frame>
+    <frame>
+      <class>org.jivesoftware.smack.XMPPConnection</class>
+      <method>login</method>
+      <line>233</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>tryLogin</method>
+      <line>150</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>onClock</method>
+      <line>280</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>onClock</method>
+      <line>60</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>96</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-07T15:27:36</date>
+  <millis>1310052456037</millis>
+  <sequence>292</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>WARNING</level>
+  <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+  <method>logXMPPException</method>
+  <thread>22</thread>
+  <message>Logon failed for clock [null], Trying to create a new user on the server on XMPP server: unknown: .</message>
+  <exception>
+    <message>SASL authentication failed: </message>
+    <frame>
+      <class>org.jivesoftware.smack.SASLAuthentication</class>
+      <method>authenticate</method>
+      <line>281</line>
+    </frame>
+    <frame>
+      <class>org.jivesoftware.smack.XMPPConnection</class>
+      <method>login</method>
+      <line>233</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>tryLogin</method>
+      <line>150</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindTimeProtocol</class>
+      <method>onClock</method>
+      <line>287</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>onClock</method>
+      <line>60</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>96</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2011-07-07T15:27:36</date>
+  <millis>1310052456038</millis>
+  <sequence>293</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
+  <method>logClock</method>
+  <thread>22</thread>
+  <message>LOGON_FAILURE clock name=[null],id=[null] WITH NO METADATAS</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:36</date>
+  <millis>1310052456038</millis>
+  <sequence>294</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>SEVERE</level>
+  <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>An error occured registering the current TAK client.</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:37</date>
+  <millis>1310052457830</millis>
+  <sequence>295</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.Acceptor</class>
+  <method>run</method>
+  <thread>10</thread>
+  <message>Server now accepting clients on port:30223.</message>
+</record>
+<record>
+  <date>2011-07-07T15:27:37</date>
+  <millis>1310052457830</millis>
+  <sequence>296</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>INFO</level>
+  <class>be.okno.tik.tak.server.net.ClientHandler</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Incoming TAK client connection.</message>
+</record>
+<record>
+  <date>2011-07-07T15:46:16</date>
+  <millis>1310053576841</millis>
+  <sequence>297</sequence>
+  <logger>be.okno.tik.tak.server.Launcher</logger>
+  <level>SEVERE</level>
+  <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>Runtime error while processing client input.</message>
+  <exception>
+    <message>com.google.gson.JsonIOException: java.io.EOFException: End of input</message>
+    <frame>
+      <class>com.google.gson.JsonStreamParser</class>
+      <method>hasNext</method>
+      <line>109</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.processing.WindClockProtocol</class>
+      <method>run</method>
+      <line>92</line>
+    </frame>
+    <frame>
+      <class>be.okno.tik.tak.server.net.ClientHandler</class>
+      <method>run</method>
+      <line>53</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1110</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>603</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>636</line>
+    </frame>
+  </exception>
+</record>
+</log>
