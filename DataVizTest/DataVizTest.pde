@@ -3,7 +3,6 @@
  *
  */
 
-
 XMLElement xml;
 ArrayList records;
 
@@ -12,7 +11,7 @@ boolean debug = true;
 
 Parser parser;
 
-String filename = "takserver.log";
+String filename = "takserver_13-07_16h14.log";
 
 void setup(){
     size(1600,900,P2D);
