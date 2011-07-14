@@ -59,11 +59,19 @@ void draw() {
     // map value from record on y axis
     float temp = map(r.temp1, 20, 37, 0, width/2);
     float temp2 = map(r.temp2, 20, 37, 0, height/2);
-
-    stroke(0,60);
     
+    float humid1 = map(r.humid, 20, 100, 0, height/2);
+    float humid2 = map(r.exthumid, 20, 100, 0, height/2);
+
+
+    stroke(255,127,30 ,160);
     
     makeCircle( time , temp , temp2 );
+    
+    stroke(127,255,30, 160);
+    
+    
+    makeCircle( time , humid1, humid2 );
     
 
   }
