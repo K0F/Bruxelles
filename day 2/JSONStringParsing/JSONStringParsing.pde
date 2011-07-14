@@ -22,13 +22,15 @@ boolean debug = true;
 // set our resolution
 int resolution = 40;
 
+float lowTemp = 20;
+float highTemp = 40;
 
 
 void setup() {
   // set size of canvas, third parameter is for renderer
   // P2D .. is accelerated 2d renderer for processing
   size(400, 400, P2D);
-
+  
   // load data from website
   data = loadStrings(url); 
 
@@ -57,11 +59,14 @@ void draw() {
     // get x coordinate
     float time = map(i, 0, records.size(), -PI, PI);
     // map value from record on y axis
-    float temp = map(r.temp1, 20, 37, 0, width/2);
-    float temp2 = map(r.temp2, 20, 37, 0, height/2);
+    float temp = map(r.temp1, lowTemp, highTemp, 0, width/2);
+    float temp2 = map(r.temp2, lowTemp, highTemp, 0, width/2);
     
-    float humid1 = map(r.humid, 20, 100, 0, height/2);
-    float humid2 = map(r.exthumid, 20, 100, 0, height/2);
+    float humid1 = map(r.humid, 20, 100, 0, width/2);
+    float humid2 = map(r.exthumid, 20, 100, 0, width/2);
+
+    float exttemp = map(r.exttemp, lowTemp, highTemp, 0, width/2);   
+    float co2 = map(r.co2, 190, 300, 0, width/2);
 
 
     stroke(255,127,30 ,160);
@@ -72,10 +77,18 @@ void draw() {
     
     
     makeCircle( time , humid1, humid2 );
+   
+   
+    stroke(30,255,127, 160);
+    
+    
+    makeCircle( time , exttemp, co2 );
     
 
   }
 }
+
+
 
 void keyPressed(){
   

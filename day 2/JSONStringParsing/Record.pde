@@ -20,6 +20,7 @@ class Record {
     exttemp = _exttemp;
     exthumid = _exthumid;
   }
+  
 
   /*
   contructor 2
