@@ -22,6 +22,8 @@ boolean debug = true;
 // set our resolution
 int resolution = 40;
 
+
+
 void setup() {
   // set size of canvas, third parameter is for renderer
   // P2D .. is accelerated 2d renderer for processing
@@ -58,10 +60,10 @@ void draw() {
     float temp = map(r.temp1, 20, 37, 0, width/2);
     float temp2 = map(r.temp2, 20, 37, 0, height/2);
 
-    stroke(0,45);
+    stroke(0,60);
     
     
-    makeCircle2( time , temp , temp2 );
+    makeCircle( time , temp , temp2 );
     
 
   }
@@ -79,7 +81,7 @@ void makeCircle(float _time, float _value){
 
 
 
-void makeCircle2(float _time, float _value1, float _value2){
+void makeCircle(float _time, float _value1, float _value2){
   
     float X1 = cos( _time + HALF_PI ) * _value1 + width/2;
     float Y1 = sin( _time + HALF_PI ) * _value1 + height/2;
