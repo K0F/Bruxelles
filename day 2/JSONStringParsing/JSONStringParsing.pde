@@ -77,6 +77,11 @@ void draw() {
   }
 }
 
+void keyPressed(){
+ if( key == ' ' ){
+    save("screenshot.png");
+ } 
+}
 
 
 void makeCircle(float _time, float _value){
