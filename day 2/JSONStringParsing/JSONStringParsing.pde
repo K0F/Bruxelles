@@ -62,43 +62,43 @@ void draw() {
     float temp = map(r.temp1, lowTemp, highTemp, 0, width/2);
     float temp2 = map(r.temp2, lowTemp, highTemp, 0, width/2);
     
+    // the same for humidity
     float humid1 = map(r.humid, 20, 100, 0, width/2);
     float humid2 = map(r.exthumid, 20, 100, 0, width/2);
 
+    // end external temperature and level of co2
     float exttemp = map(r.exttemp, lowTemp, highTemp, 0, width/2);   
     float co2 = map(r.co2, 190, 300, 0, width/2);
 
 
+    // first circle
     stroke(255,127,30 ,160);
-    
     makeCircle( time , temp , temp2 );
     
+    // second circle
     stroke(127,255,30, 160);
-    
-    
     makeCircle( time , humid1, humid2 );
    
-   
+    // third circle
     stroke(30,255,127, 160);
-    
-    
     makeCircle( time , exttemp, co2 );
-    
-
   }
 }
 
 
-
+// keypressed function is run whenewer you press a key
 void keyPressed(){
   
+ // if the key you pressed is an " " emtyspace = space button run the code below
  if( key == ' ' ){
+   
+    // save dumps the actual sketch into image.. in uses fileformat you define in extension
     save("images/screenshot.png");
  }
  
 }
 
-
+// our funtion to create the circle
 void makeCircle(float _time, float _value){
   
     float X = cos( _time + HALF_PI ) * _value + width/2;
@@ -108,7 +108,7 @@ void makeCircle(float _time, float _value){
 }
 
 
-
+// the same function with more parameters wiil start circle made of lines
 void makeCircle(float _time, float _value1, float _value2){
   
     float X1 = cos( _time + HALF_PI ) * _value1 + width/2;
