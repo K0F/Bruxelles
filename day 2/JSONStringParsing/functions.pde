@@ -41,7 +41,6 @@ void parseVals(){
 
       records.add(new Record(cntr, exttemp, exthumid, temp1, temp2, coretemp, corevolt, humid, co2, timestamp));
 
-
       /* add one to our counter so we can keep track of what number
        we are curently operating */
       cntr++;

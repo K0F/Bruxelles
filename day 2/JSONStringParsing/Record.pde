@@ -9,7 +9,7 @@ class Record {
   float coretemp;
   float corevolt;
   float humid;
-  float co2; 
+  float co2;
   String timestamp;
 
   /*
