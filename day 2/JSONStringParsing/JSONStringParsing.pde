@@ -20,7 +20,7 @@ ArrayList records;
 boolean debug = true;
 
 // set our resolution
-int resolution = 20;
+int resolution = 40;
 
 void setup() {
   // set size of canvas, third parameter is for renderer
@@ -35,6 +35,8 @@ void setup() {
   
   // and call our parsing function
   parseVals();
+  
+  smooth();
 }
 
 // draw something here
@@ -56,7 +58,7 @@ void draw() {
     float temp = map(r.temp1, 20, 37, 0, width/2);
     float temp2 = map(r.temp2, 20, 37, 0, height/2);
 
-    stroke(0,15);
+    stroke(0,45);
     
     
     makeCircle2( time , temp , temp2 );
