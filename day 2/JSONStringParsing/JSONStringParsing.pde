@@ -78,9 +78,11 @@ void draw() {
 }
 
 void keyPressed(){
+  
  if( key == ' ' ){
-    save("screenshot.png");
- } 
+    save("images/screenshot.png");
+ }
+ 
 }
 
 
