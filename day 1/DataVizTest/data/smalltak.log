@@ -1,13 +1,4 @@
- <date>2011-07-13T13:01:00</date>
-  <millis>1310562060408</millis>
-  <sequence>77246</sequence>
-  <logger>be.okno.tik.tak.server.Launcher</logger>
-  <level>INFO</level>
-  <class>be.okno.tik.tak.server.processing.WindClockLogger</class>
-  <method>logTik</method>
-  <thread>42</thread>
-  <message>TIK_REQUEST tik clockId=[null],arrivalTime=[201107194-130100-408]</message>
-</record>
+<log>
 <record>
   <date>2011-07-13T13:01:00</date>
   <millis>1310562060408</millis>
@@ -93621,3 +93612,4 @@
 	META name=[slope],type=[float],value=[-2]
 	META name=[orientation],type=[float],value=[684]</message>
 </record>
+</log>
