@@ -5,11 +5,28 @@
 
 
 
+/////////////////////////////////////////
+
+
 import jabberlib.*;
 import oscP5.*;
 import netP5.*;
 import processing.xml.*;
 
+
+
+/////////////////////////////////////////
+
+String clockName = "so-onOne";
+float maxTime = 2500.0;
+public float speed = 40.0;
+
+String oscRemoteAddress = "10.0.0.141";
+int oscRemotePort = 12001;
+
+String tikServerAddress = "tik.okno.be";
+
+/////////////////////////////////////////
 
 Jabber jabber;
 OscP5 oscP5;
@@ -18,6 +35,8 @@ HashMap<String, ArrayList> clockList = new HashMap<String, ArrayList>();
 
 processing.core.PFont font;
 
+
+
 Object[] nodes;
 
 public int timer1;
@@ -25,10 +44,12 @@ public int timer2;
 public float tim = 0;
 public float timS = 0;
 
-public float speed = 30.0f;
 
 public int [] windSpeed;
 
+
+
+/////////////////////////////////////////
 
 public void setup() {
 
@@ -44,13 +65,13 @@ public void setup() {
   //start listening to OSC messages on port 12000
   oscP5 = new OscP5(this, 12000);
   //start OSC service on port 12001
-  myRemoteLocation = new NetAddress("10.0.0.141", 12001);
+  myRemoteLocation = new NetAddress(oscRemoteAddress, oscRemotePort);
 
   font = createFont("Droid Sans Mono", 9, false);
   textMode(SCREEN);
 
   //login to TAK
-  String host = "tik.okno.be";
+  String host = tikServerAddress;
   jabber = new Jabber(this, host, 5222);
   jabber.login("tester@" + host, "tester");
   PubSub pubsub = new PubSub(jabber, "pubsub." + host);
@@ -66,6 +87,9 @@ public void setup() {
     pubsub.subscribeToNode(clock);
   }
 }
+
+
+/////////////////////////////////////////
 
 public void draw() {
   // TODO: handle each frame of drawing
@@ -103,6 +127,9 @@ public void draw() {
   }
 
 
+
+  /////////////////////////////////////////
+
   timS += (tim-timS)/speed;
   windSpeed[frameCount%width] = (int)timS;
 
@@ -111,7 +138,7 @@ public void draw() {
   for (int x = 1 ;x < windSpeed.length;x++) {
     float y = map(windSpeed[x], 0, 127, height, 0);
     float y1 = map(windSpeed[x-1], 0, 127, height, 0);
-    
+
     line(x, y, x-1, y1);
   }
 
@@ -119,6 +146,9 @@ public void draw() {
 
   send((int)timS);
 }
+
+
+/////////////////////////////////////////
 
 void send(int _val) {
 
@@ -133,11 +163,17 @@ void send(int _val) {
 
 
 
+
+/////////////////////////////////////////
+
 /**
  * incoming events from subscribed pubsub nodes
  */
 
 public void pubsubEvent(String event) {
+
+
+
   //println("received node event: " + event);
   String xml = event.substring(event.indexOf("<item"), event.indexOf("</item>") + 7);
   String id = event.substring(event.indexOf("<item id='") + 10, event.indexOf("'>"));
@@ -146,15 +182,33 @@ public void pubsubEvent(String event) {
   };
   saveStrings("tmp/clockdata" + id + ".xml", xmllist);
   delay(100);
+
   XMLElement item = new XMLElement(this, "tmp/clockdata" + id + ".xml");
+
+
+
+  String cname = item.getChild(0).getString("clockName")+"";
+
+  // get partiluar TICK from one client
+
+  if (cname.equals(clockName)) {
+    //println("bang");
+    timer2 = timer1;
+    timer1 = millis();
+    tim = constrain(timer1-timer2, 0, maxTime);
+    tim = map(tim, 0, maxTime, 0, 127);
+  }
+
+
   String itemid = item.getString("id");
   XMLElement clock = item.getChild(0);
-
   //for (int i = 0; i < clock.getChildCount(); i++) {
   XMLElement tik = clock.getChild(0);
+
   String idTik = tik.getChild(0).getContent();
   //println(itemid+":"+idTik);    
   //}
+
 
   ArrayList clockMeta = new ArrayList();
   clockMeta.add(""+(idTik));
@@ -163,17 +217,13 @@ public void pubsubEvent(String event) {
     XMLElement values = tik.getChild(1);
     if (values.getName().equals("metaDataValues")) {
 
-      println("bang");
-      timer2 = timer1;
-      timer1 = millis();
-      tim = constrain(timer1-timer2, 0, 2500);
-      tim = map(tim, 0, 2500, 0, 127);
-
 
       for (int i = 0; i < values.getChildCount(); i++) {
         XMLElement meta = values.getChild(i);
         //println(values.getChildCount()+":"+meta.getChildCount());
         String metaString = meta.getChild(2).getContent();
+        //println(metaString);
+
         metaString += ": " + meta.getChild(0).getContent();
         metaString += " (" + meta.getChild(1).getContent() + ")";
 
@@ -185,5 +235,4 @@ public void pubsubEvent(String event) {
   }
   clockList.put(id, clockMeta);
 }
-
 
