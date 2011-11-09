@@ -17,9 +17,20 @@ import processing.xml.*;
 
 /////////////////////////////////////////
 
-String clockName = "vortexVaneOkno"; // so-onOne
-float maxTime = 2500.0;
-public float speed = 10.0;
+String clockName[] = {
+  "vortexVaneOkno", "so-onOne"
+}; // so-onOne
+float maxTime = 5500.0;
+float speed = 200.0;
+
+
+// signals and colors
+String signals[] = {
+  "a", "b", "c", "d", "e", "f", "g", "h", "i"
+};
+color c[] = {
+  #ffcc00, #FCD613, #FCF813, #D7FC13, #8FFC13, #13FC21
+};
 
 String oscRemoteAddress = "10.0.0.141";
 int oscRemotePort = 12001;
@@ -39,13 +50,13 @@ processing.core.PFont font;
 
 Object[] nodes;
 
-public int timer1;
-public int timer2;
-public float tim = 0;
-public float timS = 0;
+public int timer1[];
+public int timer2[];
+public float tim[];
+public float timS[];
 
 
-public int [] windSpeed;
+public int [][] windSpeed;
 
 
 
@@ -59,7 +70,6 @@ public void setup() {
 
   frameRate(25);
 
-  windSpeed = new int[width];
 
 
   //start listening to OSC messages on port 12000
@@ -78,8 +88,28 @@ public void setup() {
 
   //get all clocks
   nodes = pubsub.getNodes();
-  int cnt = 0;
+
+  println("Number of running clients: "+nodes.length);
+  int cnt = nodes.length;
+
+  timer1 = new int[cnt];
+  timer2 = new int[cnt];
+  tim = new float[cnt];
+  timS = new float[cnt];
+  windSpeed = new int[cnt][width];
+
+
+
+
   for (int i = 0; i < nodes.length; i++) {
+    timS[i] = tim[i] = timer2[i] = timer1[i] = 0;
+
+
+    for (int ii = 0 ; ii < windSpeed[i].length;ii++) {
+      windSpeed[i][ii] = 0;
+    }
+
+
     String clock = nodes[i].toString();
     clockList.put(clock, new ArrayList());
     cnt++;
@@ -92,10 +122,8 @@ public void setup() {
 /////////////////////////////////////////
 
 public void draw() {
-  // TODO: handle each frame of drawing
-  background(0);
 
-  
+
   //text(clockList.size(), 10, 10);
 
   // Get all clocks in a set
@@ -129,38 +157,44 @@ public void draw() {
 
   /////////////////////////////////////////
 
-  timS += (tim-timS)/speed;
-  windSpeed[frameCount%width] = (int)timS;
-
-  stroke(255,120);
-  fill(200);
+  background(0);
 
 
-  
-  for (int x = 1 ;x < windSpeed.length;x++) {
-    float y = map(windSpeed[x], 0, 127, height-10, 10);
-    float y1 = map(windSpeed[x-1], 0, 127, height-10, 10);
-
-
-    stroke(#FFCC00,255-abs(y-y1));
-    line(x, y, x-1, y1);
-    
+  for (int n = 0 ;n< timer1.length;n++) {
+    timS[n] += (tim[n]-timS[n])/speed;
+    windSpeed[n][frameCount%width] = (int)timS[n];
   }
 
 
-  text("< -- windSpeed:  "+(int)timS, frameCount%width, 4+map(windSpeed[frameCount%width],0,127,height-10,10));
+  for (int n = 0 ; n < timer1.length;n++) {
 
-  
-  send((int)timS);
+    for (int x = 1 ;x < windSpeed[n].length;x++) {
+      float y = map(windSpeed[n][x], 0, 127, height-10, 10);
+      float y1 = map(windSpeed[n][x-1], 0, 127, height-10, 10);
+
+
+
+
+      stroke(c[n], 255-abs(y-y1));
+      line(x, y, x-1, y1);
+    }
+
+
+    fill(c[n]);
+    text("< -- "+clockName[n]+" - speed:  "+(int)timS[n], frameCount%width, 4+map(windSpeed[n][frameCount%width], 0, 127, height-10, 10));
+
+
+    send((int)timS[n], n);
+  }
 }
 
 
 /////////////////////////////////////////
 
-void send(int _val) {
+void send(int _val, int _which) {
 
   // send Osc messages
-  OscMessage clockMessage = new OscMessage("/msg/a");
+  OscMessage clockMessage = new OscMessage("/msg/"+signals[_which]);
   //clockMessage.add(clockName);
   //oscP5.send(clockMessage, myRemoteLocation);
   //OscMessage valueMessage = new OscMessage("/" + clockName);
@@ -198,12 +232,15 @@ public void pubsubEvent(String event) {
 
   // get partiluar TICK from one client
 
-  if (cname.equals(clockName)) {
-    //println("bang");
-    timer2 = timer1;
-    timer1 = millis();
-    tim = constrain(timer1-timer2, 0, maxTime);
-    tim = map(tim, 0, maxTime, 0, 127);
+  for (int n = 0 ;n < timer1.length;n++) {
+
+    if (cname.equals(clockName[n])) {
+      //println("bang");
+      timer2[n] = timer1[n];
+      timer1[n] = millis();
+      tim[n] = constrain(timer1[n]-timer2[n], 0, maxTime);
+      tim[n] = map(tim[n], 0, maxTime, 0, 127);
+    }
   }
 
 
