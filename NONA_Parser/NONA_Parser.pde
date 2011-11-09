@@ -110,7 +110,9 @@ public void draw() {
 
   for (int x = 1 ;x < windSpeed.length;x++) {
     float y = map(windSpeed[x], 0, 127, height, 0);
-    line(x-1, y, x, y);
+    float y1 = map(windSpeed[x-1], 0, 127, height, 0);
+    
+    line(x, y, x-1, y1);
   }
 
   text((int)timS, 20, height-100);
