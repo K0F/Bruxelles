@@ -9,9 +9,6 @@ import jabberlib.*;
 import oscP5.*;
 import netP5.*;
 import processing.xml.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.*;
 
 
 Jabber jabber;
