@@ -1,13 +1,13 @@
 <item id='so-onOne'><clock xmlns="pubsub:clock" clockName="so-onOne"><tik>
-  <idTik>14366</idTik>
+  <idTik>14743</idTik>
   <metaDataValues>
     <metaDataValue>
-      <value>396</value>
+      <value>253</value>
       <type>float</type>
       <name>orientation</name>
     </metaDataValue>
     <metaDataValue>
-      <value>-4</value>
+      <value>1</value>
       <type>float</type>
       <name>slope</name>
     </metaDataValue>

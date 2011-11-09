@@ -1,15 +1,15 @@
 <item id='vortexVaneOkno'><clock xmlns="pubsub:clock" clockName="vortexVaneOkno"><tik>
-  <idTik>12443</idTik>
+  <idTik>12804</idTik>
   <metaDataValues>
-    <metaDataValue>
-      <value>SW</value>
-      <type>float</type>
-      <name>orientation</name>
-    </metaDataValue>
     <metaDataValue>
       <value>-1</value>
       <type>int</type>
       <name>slope</name>
+    </metaDataValue>
+    <metaDataValue>
+      <value>SW</value>
+      <type>float</type>
+      <name>orientation</name>
     </metaDataValue>
   </metaDataValues>
 </tik></clock></item>

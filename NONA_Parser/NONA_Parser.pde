@@ -17,9 +17,9 @@ import processing.xml.*;
 
 /////////////////////////////////////////
 
-String clockName = "so-onOne";
+String clockName = "vortexVaneOkno"; // so-onOne
 float maxTime = 2500.0;
-public float speed = 40.0;
+public float speed = 10.0;
 
 String oscRemoteAddress = "10.0.0.141";
 int oscRemotePort = 12001;
@@ -55,7 +55,7 @@ public void setup() {
 
 
   // TODO: setup application
-  size(640, 240, P2D);
+  size(1600, 320, P2D);
 
   frameRate(25);
 
@@ -67,7 +67,7 @@ public void setup() {
   //start OSC service on port 12001
   myRemoteLocation = new NetAddress(oscRemoteAddress, oscRemotePort);
 
-  font = createFont("Droid Sans Mono", 9, false);
+  font = createFont("Monaco", 9, false);
   textMode(SCREEN);
 
   //login to TAK
@@ -95,9 +95,8 @@ public void draw() {
   // TODO: handle each frame of drawing
   background(0);
 
-  fill(255);
-
-  text(clockList.size(), 10, 10);
+  
+  //text(clockList.size(), 10, 10);
 
   // Get all clocks in a set
   Set clockSet = clockList.entrySet();
@@ -133,17 +132,25 @@ public void draw() {
   timS += (tim-timS)/speed;
   windSpeed[frameCount%width] = (int)timS;
 
-  stroke(255);
+  stroke(255,120);
+  fill(200);
 
+
+  
   for (int x = 1 ;x < windSpeed.length;x++) {
-    float y = map(windSpeed[x], 0, 127, height, 0);
-    float y1 = map(windSpeed[x-1], 0, 127, height, 0);
+    float y = map(windSpeed[x], 0, 127, height-10, 10);
+    float y1 = map(windSpeed[x-1], 0, 127, height-10, 10);
 
+
+    stroke(#FFCC00,255-abs(y-y1));
     line(x, y, x-1, y1);
+    
   }
 
-  text((int)timS, 20, height-100);
 
+  text("< -- windSpeed:  "+(int)timS, frameCount%width, 4+map(windSpeed[frameCount%width],0,127,height-10,10));
+
+  
   send((int)timS);
 }
 
