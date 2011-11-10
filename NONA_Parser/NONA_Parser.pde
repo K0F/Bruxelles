@@ -20,8 +20,8 @@ import processing.xml.*;
 String clockName[] = {
   "vortexVaneOkno", "so-onOne"
 }; // so-onOne
-float maxTime = 5500.0;
-float speed = 200.0;
+float maxTime = 550.0;
+float speed = 80.0;
 
 
 // signals and colors
@@ -56,7 +56,7 @@ public float tim[];
 public float timS[];
 
 
-public int [][] windSpeed;
+public float [][] windSpeed;
 
 
 
@@ -90,18 +90,18 @@ public void setup() {
   nodes = pubsub.getNodes();
 
   println("Number of running clients: "+nodes.length);
-  int cnt = nodes.length;
+  int cnt = clockName.length;
 
   timer1 = new int[cnt];
   timer2 = new int[cnt];
   tim = new float[cnt];
   timS = new float[cnt];
-  windSpeed = new int[cnt][width];
+  windSpeed = new float[cnt][width];
 
 
 
 
-  for (int i = 0; i < nodes.length; i++) {
+  for (int i = 0; i < clockName.length; i++) {
     timS[i] = tim[i] = timer2[i] = timer1[i] = 0;
 
 
@@ -162,7 +162,7 @@ public void draw() {
 
   for (int n = 0 ;n< timer1.length;n++) {
     timS[n] += (tim[n]-timS[n])/speed;
-    windSpeed[n][frameCount%width] = (int)timS[n];
+    windSpeed[n][frameCount%width] = timS[n];
   }
 
 
