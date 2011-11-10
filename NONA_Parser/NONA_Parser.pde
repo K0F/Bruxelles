@@ -18,9 +18,9 @@ import processing.xml.*;
 /////////////////////////////////////////
 
 String clockName[] = {
-  "vortexVaneOkno", "so-onOne"
+  "vortexVaneOkno", "so-onOne","illuminatedShrum"
 }; // so-onOne
-float maxTime = 550.0;
+float maxTime[];// = 550.0;
 float speed = 80.0;
 
 
@@ -97,12 +97,12 @@ public void setup() {
   tim = new float[cnt];
   timS = new float[cnt];
   windSpeed = new float[cnt][width];
-
+  maxTime = new float[cnt];
 
 
 
   for (int i = 0; i < clockName.length; i++) {
-    timS[i] = tim[i] = timer2[i] = timer1[i] = 0;
+    maxTime[i] = timS[i] = tim[i] = timer2[i] = timer1[i] = 0;
 
 
     for (int ii = 0 ; ii < windSpeed[i].length;ii++) {
@@ -111,6 +111,7 @@ public void setup() {
 
 
     String clock = nodes[i].toString();
+    println(clock);
     clockList.put(clock, new ArrayList());
     cnt++;
     //subscribe to all clocks
@@ -163,6 +164,8 @@ public void draw() {
   for (int n = 0 ;n< timer1.length;n++) {
     timS[n] += (tim[n]-timS[n])/speed;
     windSpeed[n][frameCount%width] = timS[n];
+    
+      
   }
 
 
@@ -175,7 +178,9 @@ public void draw() {
 
 
 
-      stroke(c[n], 255-abs(y-y1));
+      stroke(c[n], 200);
+      
+      if(x!=frameCount%width+1)
       line(x, y, x-1, y1);
     }
 
@@ -235,11 +240,16 @@ public void pubsubEvent(String event) {
   for (int n = 0 ;n < timer1.length;n++) {
 
     if (cname.equals(clockName[n])) {
-      //println("bang");
       timer2[n] = timer1[n];
       timer1[n] = millis();
-      tim[n] = constrain(timer1[n]-timer2[n], 0, maxTime);
-      tim[n] = map(tim[n], 0, maxTime, 0, 127);
+      
+      tim[n] = timer1[n]-timer2[n];
+      maxTime[n] += (tim[n]-maxTime[n])/2.0;
+      println("bang: "+n +" "+ tim[n] +" mx: "+maxTime[n]);
+      
+      
+      tim[n] = constrain(tim[n], 0, maxTime[n]);
+      tim[n] = map(tim[n], 0, maxTime[n], 0, 127);
     }
   }
 
