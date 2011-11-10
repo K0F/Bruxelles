@@ -243,8 +243,16 @@ public void pubsubEvent(String event) {
       timer2[n] = timer1[n];
       timer1[n] = millis();
       
-      tim[n] = timer1[n]-timer2[n];
-      maxTime[n] += (tim[n]-maxTime[n])/2.0;
+      tim[n] += ((timer1[n]-timer2[n])-tim[n])/100.0;
+      
+      maxTime[n] += (tim[n]*2-maxTime[n])/10.0;
+      
+      
+      /*
+      for(int r = 0;r<maxTime.length;r++){
+       maxTime[n] += (maxTime[r]-maxTime[n])/(maxTime.length+0.0) ;
+      }*/
+      
       println("bang: "+n +" "+ tim[n] +" mx: "+maxTime[n]);
       
       
