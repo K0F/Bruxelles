@@ -1,8 +1,8 @@
 <item id='vortexVaneOkno'><clock xmlns="pubsub:clock" clockName="vortexVaneOkno"><tik>
-  <idTik>700</idTik>
+  <idTik>751</idTik>
   <metaDataValues>
     <metaDataValue>
-      <value>-1</value>
+      <value>1</value>
       <type>int</type>
       <name>slope</name>
     </metaDataValue>
